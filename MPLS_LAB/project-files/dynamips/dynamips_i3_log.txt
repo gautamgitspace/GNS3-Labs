@@ -1,0 +1,60 @@
+Sep 26 23:33:01.335 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Sep 26 23:33:01.335 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53335.
+Sep 26 23:33:01.357 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 26 23:33:01.359 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 26 23:33:01.360 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Gautam/GNS3/projects/MPLS_LAB/project-files/dynamips 
+Sep 26 23:33:01.360 GENERAL: working_dir=/Users/Gautam/GNS3/projects/MPLS_LAB/project-files/dynamips
+Sep 26 23:33:01.362 HYPERVISOR: exec_cmd: vm create R3 3 c7200 
+Sep 26 23:33:01.362 VM: VM R3 created.
+Sep 26 23:33:01.363 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 2002 
+Sep 26 23:33:01.364 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Sep 26 23:33:01.365 HYPERVISOR: exec_cmd: vm get_status R3 
+Sep 26 23:33:01.366 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Sep 26 23:33:01.367 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Sep 26 23:33:01.368 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Sep 26 23:33:01.370 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/Gautam/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Sep 26 23:33:01.371 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Sep 26 23:33:01.373 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Sep 26 23:56:04.617 HYPERVISOR: exec_cmd: vm rename R3 R3-P 
+Sep 26 23:57:22.240 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 26 23:57:22.241 HYPERVISOR: exec_cmd: vm slot_add_binding R3-P 3 0 PA-GE 
+Sep 26 23:57:22.242 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 26 23:57:22.243 HYPERVISOR: exec_cmd: vm slot_add_binding R3-P 2 0 PA-GE 
+Sep 26 23:58:08.841 HYPERVISOR: exec_cmd: nio create_udp udp-cfa0e90d-111f-4223-ab14-60e9778cac8c 10003 127.0.0.1 10002 
+Sep 26 23:58:08.844 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3-P 2 0 udp-cfa0e90d-111f-4223-ab14-60e9778cac8c 
+Sep 26 23:58:08.846 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 26 23:58:12.503 HYPERVISOR: exec_cmd: nio create_udp udp-325bb116-b0d6-49fa-a35a-d2ad6f50672b 10004 127.0.0.1 10005 
+Sep 26 23:58:12.512 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3-P 3 0 udp-325bb116-b0d6-49fa-a35a-d2ad6f50672b 
+Sep 26 23:58:12.515 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 00:02:46.018 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 00:02:46.033 HYPERVISOR: exec_cmd: vm set_idle_pc R3-P 0x63184bc8 
+Sep 27 00:02:57.844 HYPERVISOR: exec_cmd: vm set_ghost_status R3-P 2 
+Sep 27 00:02:57.845 HYPERVISOR: exec_cmd: vm set_ghost_file R3-P c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Sep 27 00:02:57.846 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 00:02:57.848 HYPERVISOR: exec_cmd: vm start R3-P 
+Sep 27 01:11:16.963 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 01:11:16.965 HYPERVISOR: exec_cmd: vm stop R3-P 
+Sep 27 01:11:17.655 VM: VM R3-P shutdown.
+Sep 27 01:11:17.657 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:11:22.934 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 01:11:22.935 HYPERVISOR: exec_cmd: vm start R3-P 
+Sep 27 01:14:55.671 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 01:14:55.683 HYPERVISOR: exec_cmd: vm set_idle_pc_online R3-P 0 0x63184dd4 
+Sep 27 01:14:55.688 HYPERVISOR: exec_cmd: vm set_config R3-P configs/i3_startup-config.cfg 
+Sep 27 01:23:27.848 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:23:28.184 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:23:28.345 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:23:28.599 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:23:28.786 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:31:24.312 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:31:31.296 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 01:31:31.299 HYPERVISOR: exec_cmd: vm stop R3-P 
+Sep 27 01:31:35.030 VM: VM R3-P shutdown.
+Sep 27 01:31:35.034 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:31:38.110 HYPERVISOR: exec_cmd: vm get_status R3-P 
+Sep 27 01:31:38.113 HYPERVISOR: exec_cmd: vm extract_config R3-P 
+Sep 27 01:31:38.119 HYPERVISOR: exec_cmd: vm delete R3-P 
+Sep 27 01:31:38.119 VM: VM R3-P destroyed.
+Sep 27 01:31:38.127 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 27 01:31:38.456 HYPERVISOR: Stopped.
+Sep 27 01:31:38.457 GENERAL: reset done.

@@ -1,0 +1,55 @@
+Sep 26 23:33:03.859 HYPERVISOR: Release 0.2.15-amd64/Darwin (tag 2015060118)
+Sep 26 23:33:03.859 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53340.
+Sep 26 23:33:03.879 HYPERVISOR: exec_cmd: hypervisor version 
+Sep 26 23:33:03.880 HYPERVISOR: exec_cmd: hypervisor uuid 
+Sep 26 23:33:03.881 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Gautam/GNS3/projects/MPLS_LAB/project-files/dynamips 
+Sep 26 23:33:03.881 GENERAL: working_dir=/Users/Gautam/GNS3/projects/MPLS_LAB/project-files/dynamips
+Sep 26 23:33:03.882 HYPERVISOR: exec_cmd: vm create R5 5 c7200 
+Sep 26 23:33:03.882 VM: VM R5 created.
+Sep 26 23:33:03.883 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 2004 
+Sep 26 23:33:03.884 HYPERVISOR: exec_cmd: c7200 get_mac_addr R5 
+Sep 26 23:33:03.885 HYPERVISOR: exec_cmd: vm get_status R5 
+Sep 26 23:33:03.886 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 C7200-IO-FE 
+Sep 26 23:33:03.887 HYPERVISOR: exec_cmd: vm set_nvram R5 512 
+Sep 26 23:33:03.889 HYPERVISOR: exec_cmd: vm set_ram R5 512 
+Sep 26 23:33:03.893 HYPERVISOR: exec_cmd: vm set_ios R5 /Users/Gautam/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Sep 26 23:33:03.895 HYPERVISOR: exec_cmd: vm set_disk0 R5 0 
+Sep 26 23:33:03.897 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Sep 26 23:55:56.633 HYPERVISOR: exec_cmd: vm rename R5 R5-PE 
+Sep 26 23:57:54.525 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 26 23:57:54.527 HYPERVISOR: exec_cmd: vm slot_add_binding R5-PE 4 0 PA-GE 
+Sep 26 23:58:15.960 HYPERVISOR: exec_cmd: nio create_udp udp-95f4012d-2fa3-4a22-937e-f74adcea67dd 10007 127.0.0.1 10006 
+Sep 26 23:58:15.962 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5-PE 4 0 udp-95f4012d-2fa3-4a22-937e-f74adcea67dd 
+Sep 26 23:58:15.964 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 00:02:46.032 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 00:02:46.045 HYPERVISOR: exec_cmd: vm set_idle_pc R5-PE 0x63184bc8 
+Sep 27 00:07:36.159 HYPERVISOR: exec_cmd: vm set_ghost_status R5-PE 2 
+Sep 27 00:07:36.161 HYPERVISOR: exec_cmd: vm set_ghost_file R5-PE c7200-advipservicesk9-mz.152-4.S5.image-512.ghost 
+Sep 27 00:07:36.162 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 00:07:36.163 HYPERVISOR: exec_cmd: vm start R5-PE 
+Sep 27 01:11:41.692 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 01:11:41.694 HYPERVISOR: exec_cmd: vm stop R5-PE 
+Sep 27 01:11:42.367 VM: VM R5-PE shutdown.
+Sep 27 01:11:42.384 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:11:47.362 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 01:11:47.366 HYPERVISOR: exec_cmd: vm start R5-PE 
+Sep 27 01:14:55.680 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 01:14:55.684 HYPERVISOR: exec_cmd: vm set_idle_pc_online R5-PE 0 0x63184dd4 
+Sep 27 01:14:55.691 HYPERVISOR: exec_cmd: vm set_config R5-PE configs/i5_startup-config.cfg 
+Sep 27 01:23:27.852 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:23:28.188 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:23:28.349 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:23:28.602 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:23:28.790 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:31:24.316 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:31:31.284 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 01:31:31.291 HYPERVISOR: exec_cmd: vm stop R5-PE 
+Sep 27 01:31:35.137 VM: VM R5-PE shutdown.
+Sep 27 01:31:35.141 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:31:38.110 HYPERVISOR: exec_cmd: vm get_status R5-PE 
+Sep 27 01:31:38.114 HYPERVISOR: exec_cmd: vm extract_config R5-PE 
+Sep 27 01:31:38.120 HYPERVISOR: exec_cmd: vm delete R5-PE 
+Sep 27 01:31:38.120 VM: VM R5-PE destroyed.
+Sep 27 01:31:38.128 HYPERVISOR: exec_cmd: hypervisor stop 
+Sep 27 01:31:38.257 HYPERVISOR: Stopped.
+Sep 27 01:31:38.258 GENERAL: reset done.
